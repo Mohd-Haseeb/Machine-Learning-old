@@ -7,7 +7,7 @@ What is linear regressin?
 
 - Linear Regression fits a line through the data sets.
 
-![](./liner_regression.jpeg)
+![](./Images/liner_regression.jpeg)
 
 - Say, we have details of a house like no of rooms, area, how many doors it has, etc. By taking these parameters as input features, we can predict the __COST ($y_0$)__ of the house.
 
@@ -24,14 +24,14 @@ Simple Linear Regression ?
 
 
 
-!['Simple Linear Regression'](./linear-regression-plot.jpeg)
+!['Simple Linear Regression'](./Images/linear-regression-plot.jpeg)
 
 
 
 - Here, we call this line as Best Fit Line.
 - To decide if whether the predicted line is Best fit or not, we find the __ERROR__ using differeent methods. Line at which the error is minimum, we call it __BEST FIT LINE__
 
-![](./fig-2-simple-hypothesis.png)
+![](./Images/fig-2-simple-hypothesis.png)
 
 - In above plot, we can see for different values of $\theta_1$ we are getting different lines. Among these we have to select the one with least errors.
 
@@ -83,7 +83,7 @@ Simple Linear Regression ?
 
 - By assuming different values of $\theta_0$ and finding its respective Cost value. If we plot $\theta_0$ on X-axis and Cost($J(\theta_0)$) on Y-axis. We get an inverted bell curve.
 
-![theta_1 vs cost funciton plot](./fig-3-cost-function.png)
+![theta_1 vs cost funciton plot](./Images/fig-3-cost-function.png)
 
 - Point where value of Cost is minimum (here it is $J(\theta) = 0$ at $\theta_1 = 1$) is called __GLOBAL MINIMUM__.
 
@@ -91,7 +91,7 @@ Simple Linear Regression ?
 
 
 - Instead of assuming $\theta_0 = 0$ for simpler understanding, if we had assumed both values then the kind of plot we would have generated is 
-![cost_3d](./3d_plot_cost.png)
+![cost_3d](./Images/3d_plot_cost.png)
 
 
 ## GRADIENT DESCENT:
@@ -114,13 +114,13 @@ Simple Linear Regression ?
 
     - Here, $\alpha$ is called __LEARNING RATE__. Generally it is a small positive number. It controls how big each step should be while changing the coefficient values.
 
-        ![](./learning_gradiet.png)
+        ![](./Images/learning_gradiet.png)
 
     - The partial derivative term ($\frac{\partial}{\partial \theta_1}(J(\theta_0, \theta_1))$) of the Cost function tells in which direction should we move in order to reach the __minimal point__.
 
-        ![](./3-steps-of-a-Gradient-Descent-with-learning-decay-rate-a-starting-from-the-initial.png)
+        ![](./Images/3-steps-of-a-Gradient-Descent-with-learning-decay-rate-a-starting-from-the-initial.png)
 
-    ![](./e4wjp.png)
+    ![](./Images/e4wjp.png)
 
     - If the value of derivative is negative(-ve) it means the slope is also negative. So , we add the differntial value to the existing point such that we move closer to the local minima point.
     
@@ -162,7 +162,7 @@ J($\theta_1$) => $\theta_1 = \theta_1 - \alpha* \frac{\partial}{\partial \theta_
 
 - If it is too large, gardient descent may overshoot and never reach the nminimum. It will fail to Converge.
 
-![learning rate](./learning_rate.png)
+![learning rate](./Images/learning_rate.png)
 
 - Few good values of learning rate to start with are 0.001, 0.01, 0.1, 1 and so on.
 
