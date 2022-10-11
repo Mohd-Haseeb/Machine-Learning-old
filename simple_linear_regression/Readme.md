@@ -1,5 +1,8 @@
 ## SIMPLE LINEAR REGRESSION:
 
+- Linear Regression is a useful tool for predicting a quantitative response.
+
+
 What is linear regressin?
 - Linear Regression is a Supervised Machine Learning Model which pedicts a continuous value based on the given input features($X_1$, $X_2$, $X_3$, ....$X_n$)
 
@@ -11,11 +14,16 @@ What is linear regressin?
 
 - Say, we have details of a house like no of rooms, area, how many doors it has, etc. By taking these parameters as input features, we can predict the __COST ($y_0$)__ of the house.
 
-Simple Linear Regression ?
+__Simple Linear Regression ?__
+
 - If the linear regression has only one independent and one dependent variable. Then it is called __SIMPLE__ or __UNIVARIATE__ Linear Regression.
+
+- It assumes there is approximately a linear relationship between X(input) and Y(output).
 
 
 - In this Regression model, the model genearates an equation of line. If it's an Univariate Regression, the equation will be __. $\hat{y}$ = $\beta_0 + \beta_1x$ .__
+
+- The main aim of linear regression model is to determine the values of coefficients which can result in he best-fitted linear regression line.
 
 - This can alsio be written as; $h_\theta(x) = \theta_0 + \theta_1(x)$ 
     - Where, 
@@ -120,7 +128,7 @@ Simple Linear Regression ?
 
         ![](./Images/3-steps-of-a-Gradient-Descent-with-learning-decay-rate-a-starting-from-the-initial.png)
 
-    ![](./Images/e4wjp.png)
+    ![](./Images/gradient_descent_assemblyai.png)
 
     - If the value of derivative is negative(-ve) it means the slope is also negative. So , we add the differntial value to the existing point such that we move closer to the local minima point.
     
@@ -164,6 +172,8 @@ J($\theta_1$) => $\theta_1 = \theta_1 - \alpha* \frac{\partial}{\partial \theta_
 
 ![learning rate](./Images/learning_rate.png)
 
+![](./Images/learning_rates_asssembltai.png)
+
 - Few good values of learning rate to start with are 0.001, 0.01, 0.1, 1 and so on.
 
 
@@ -180,6 +190,8 @@ J($\theta_1$) => $\theta_1 = \theta_1 - \alpha* \frac{\partial}{\partial \theta_
         - Derivative becomes smaller
         - Update steps become smaller
 
+
+
     
 
 
@@ -194,35 +206,6 @@ J($\theta_1$) => $\theta_1 = \theta_1 - \alpha* \frac{\partial}{\partial \theta_
 
 ------------------
 
-What is a linear regression ?
-- Statistical method for predextive analysis ...
-
-How we can calculate error in Linear regression ?
-- MSE, RMSE, ...
-
-Difference between Loss function and Cost Function ?
-- loss is for one value, copst is for whole column.
-
-Difference between MSE and MAE and RMSE
-- ... 
-
-How gradient descent works ?
-- It is an iterative approach
-
-
-Explain Indepth Mathematical Intitution and working of Linear Regression
-- ...
-
-Explain what the intercept term means ?
-
-Assumptions of Linear regression ?
-
-How hypothesis testing is used in Linear Regression ?
-
-How would you decide the importance of Variable for the multivariate regression ?
-
-
-R vs adjusted R^2
 
 
 
